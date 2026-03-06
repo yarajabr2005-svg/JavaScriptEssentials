@@ -27,7 +27,30 @@ function show(){
     }
     show();
     
-    console.log(functionVar); // Throws ReferenceError
-    console.log(functionLet); // Throws ReferenceError
-    console.log(functionConst); // Throws ReferenceError
+    //console.log(functionVar); // Throws ReferenceError
+    //console.log(functionLet); // Throws ReferenceError
+    //console.log(functionConst); // Throws ReferenceError
     
+
+    //Practice Task
+    {
+        let practiceLet="This is a practice block-scoped let";
+        const practiceConst="This is a practice block-scoped const";
+        var practiceVar="This is a practice block-scoped var";
+    
+        console.log(practiceLet);
+        console.log(practiceConst);
+        console.log(practiceVar);
+
+        practiceLet="Reassign practiceLet";
+        //practiceConst="Reassign practice const";
+        practiceVar="Reassign practice var";
+
+        console.log(practiceLet);
+        //console.log(practiceConst);
+        console.log(practiceVar);
+    }   
+
+        console.log(practiceLet); //error, says it's not defined
+        console.log(practiceVar);
+
