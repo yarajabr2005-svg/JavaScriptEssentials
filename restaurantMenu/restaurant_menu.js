@@ -3,12 +3,15 @@ const mainCourseMenu = ['Steak', 'Pasta', 'Burger', 'Salmon'];
 const dessertMenu = ['Cake', 'Ice Cream', 'Pudding', 'Fruit Salad'];
 
 const breakfastItems = breakfastMenu.map((item, index) => 
-    `<p>Item ${index + 1}: ${item}</p>`).join('');
+    `<p>Item ${index + 1}: ${item}</p>`).join(''); //without join would be 
+    // the same as join(,), because it calls the toString() 
+    // which is equivelant to it
 document.getElementById('breakfastMenuItems').innerHTML = breakfastItems;
 
  let mainCourseItem = '';
 mainCourseMenu.forEach((item, index) => {
-    mainCourseItem += `<p>Item ${index + 1}: ${item}</p>`;});
+    mainCourseItem += `<p>Item ${index + 1}: ${item}</p>`;});// no join
+    //because it's already a string
 document.getElementById('maincourseMenuItems').innerHTML = mainCourseItem;
 
 let dessertItem = '';
