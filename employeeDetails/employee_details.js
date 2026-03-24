@@ -5,7 +5,7 @@ const employees = [
       //... More employee records can be added here
     ];
 
-function dislayEmployess(){
+function displayEmployees(){
 const totalEmployees = employees
         .map(employee => `<p>${employee.id}: ${employee.name} - ${employee.department} 
             - $${employee.salary}</p>`).join('');
